@@ -10,6 +10,6 @@ def perimRect(length,width):
 def areaRect(length,width):
    ''' Compute area of rectangle, given length and width '''
 
-   return str(float(length) * float(width)) # stub  @@@ replace this stub with the correct code @@@
+   return float(length) * float(width) # stub  @@@ replace this stub with the correct code @@@
 
 

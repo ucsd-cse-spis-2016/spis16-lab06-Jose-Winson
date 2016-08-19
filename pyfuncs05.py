@@ -54,7 +54,7 @@ def countOdds(numbers):
 def sumOdds(numbers):
     if len(numbers)==0:
         return 0
-    if (isOdd(first(number))):
+    if (isOdd(first(numbers))):
         return first(numbers) + sumOdds(rest(numbers))
     else:
         return sumOdds(rest(numbers))
