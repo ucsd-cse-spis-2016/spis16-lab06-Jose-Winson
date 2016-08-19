@@ -13,39 +13,37 @@ from pyfuncs04 import rest
 # be implemented with recursion, and the "first" and "rest" functions.
 
 def totalValue(numbers):
-  ''' add up all numbers in a collection of numbers '''
-  if len(numbers)==0:
-    return 0
-  else:
-    return first(numbers) + totalValue(rest(numbers))
+    if len(numbers)==0:
+        return 0
+    else:
+        return first(numbers) + totalValue(rest(numbers))
  
 # The function productOfAll can be built in the same way as
 # totalValue.  Try it:
 
 def productOfAll(numbers):
-  ''' product of all numbers in collection.  For empty collection, return 1 '''
-  return "stub"
+    if len(numbers) == 0:
+        return 1
+    else:
+        return first(numbers) * productOfAll(rest(numbers))
 
 def isOdd(number):
-  ''' True if number is odd.  False if number is even '''
   # Hint: use % operator.  If remainder after dividing by 2 is 1, its odd 
-  return "stub"
+    return (number % 2 == 1)
 
 def isEven(number):
-  ''' True if number is even.  False if number is odd '''
-  return "stub"
+    return (number %2 == 0)
 
 # This function shows an example of counting things in a collection
 # that meet some criterion
 
 def countOdds(numbers):
-   ''' return the count of items in a collection of numbers that are odd '''
-   if len(numbers) == 0:
-      return 0
-   elif isOdd(first(numbers)):
-      return 1 + countOdds(rest(numbers))
-   else:
-      return countOdds(rest(numbers))
+    if len(numbers) == 0:
+        return 0
+    elif isOdd(first(numbers)):
+        return 1 + countOdds(rest(numbers))
+    else:
+        return countOdds(rest(numbers))
 
 # Use the pattern from countOdds as a hint, write a function
 # that will find the sum of all the odd numbers in a collection
@@ -54,6 +52,9 @@ def countOdds(numbers):
 # but try to use recursion if you can.
 
 def sumOdds(numbers):
-   ''' find sum of all odd numbers in a collection '''
-   return "stub"
-
+    if len(numbers)==0:
+        return 0
+    if (isOdd(first(number))):
+        return first(numbers) + sumOdds(rest(numbers))
+    else:
+        return sumOdds(rest(numbers))

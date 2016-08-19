@@ -25,6 +25,9 @@ def isString(x):
     """"
     return True if x is a string, otherwise False
     """
-    
-    return "stub" # stub  @@@ replace this stub with the correct code @@@
+    if type(x) == str:
+        return True
+    else:
+        return False
+
 

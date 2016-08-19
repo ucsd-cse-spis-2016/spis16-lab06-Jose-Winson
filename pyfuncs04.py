@@ -11,8 +11,8 @@ def rest(collection):
 
 def last(collection):
     ''' last item of an indexable thing '''
-    return "stub"
+    return collection[-1]
 
 def allButLast(collection):
     ''' last item of an indexable thing '''
-    return "stub"
+    return collection[0:len(collection) - 1]

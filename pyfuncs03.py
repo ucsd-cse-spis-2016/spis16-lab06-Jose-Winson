@@ -8,7 +8,7 @@
 def isAdditivePrimaryColor(color):
     ''' if color one of 'red', 'green', or 'blue' then True, otherwise False'''
 
-    return ( (color == "red" ) or (color == "green" ) or (color == "blue") )
+    return ((color == 'red') or (color == 'green') or (color == 'blue'))
 
 # NOTE: the following will NOT work for isAdditivePrimaryColor:
 #
@@ -36,6 +36,7 @@ def isAdditivePrimaryColor(color):
 ### @@@  at work in isPrimaryColor of combining boolean expressions with "or"
 
 def isSimpleNumeric(x):
-   ''' returns True if x is has type int or float; anything else, False '''
-   return "stub" 
-  
+    if type(x) == int or type(x) == float:
+        return True
+    else:
+        return False

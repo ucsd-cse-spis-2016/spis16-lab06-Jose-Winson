@@ -4,7 +4,7 @@
 def perimRect(length,width):
    ''' Compute perimiter of rectangle, given length and width '''
 
-   return str(2*float(length)+(2*float(width))) # stub  @@@ replace this stub with the correct code @@@
+   return 2*float(length)+(2*float(width)) # stub  @@@ replace this stub with the correct code @@@
 
 
 def areaRect(length,width):
